@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.0.7/css/all.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        .header {
+            display: flex;
+
+        }
+
+        #header {
+            padding-left: 55px;
+            display: flex;
+            flex: 20%;
+        }
+
+        #header-right {
+            padding-right: 20px;
+        }
+
+        select {
+            border: none;
+        }
+
+        select:hover {
+            background-color: aqua;
+        }
+
+        #area {
+            height: 25px;
+            padding: 3px;
+        }
+
+        hr {
+            color: ;
+        }
+
+        .nav {
+            display: flex;
+
+            box-shadow: 0 8px 6px -6px black;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-around;
+            flex: 85%;
+            height: 41px;
+        }
+
+        .search-container {
+            margin-bottom: 5px;
+            flex: 50%;
+        }
+
+        .search-button {
+            background-color: deepskyblue;
+            border: none;
+            margin-left: -5px;
+            height: 42px;
+            width: 17%;
+        }
+
+        .search {
+
+            height: 35px;
+            width: 80%;
+        }
+
+        .tab {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .tablinks {
+            border: none;
+            background: deepskyblue;
+        }
+
+        .tablinks:hover {
+            color: gray;
+        }
+
+        .index {
+            display: flex;
+        }
+
+        #tabs {
+            width: 75%;
+        }
+
+        .input {
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        .article {
+            margin-left: 75px;
+        }
+        #filter{
+            width: 120%;
+    padding-left: 25px;
+    height: 30px;
+    
+    background-color: lightgray;
+    margin-bottom: 0px;
+        }
+        .filter {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .stores {
+            display: flex;
+            justify-content: space-evenly;
+            width: 65%;
+    margin-right: 140px;
+}
+        
+        .review{
+            width: 200%;
+            height: 45px;
+            background-color: deeppink;
+            border: none;
+            margin-left: 55px;
+        }
+        .related{
+            background-color: lavenderblush;
+            padding-right: 35px;
+            padding-left: 35px;
+            height: 525px;
+        }
+        .stores>hr{
+            width: 240%;
+        }
+        .filters{
+            background-color: lavenderblush;
+            padding-left: 25px;
+            padding-right: 50px;
+            width: 95%;
+        }
+        .pages{
+            text-align: center;
+        }
+        .page{
+            color: navy;
+            height: 30px;
+            width: 35px;
+        }
+        #footer {
+        margin-top: 45px;
+        display: flex;
+        justify-content: space-between;
+        background-color: black;
+        color: white;
+    }
+
+    .help {
+        padding-left: 45px;
+    }
+
+    .news {
+        padding-right: 50px;
+    }
+
+    #icon {
+        padding-right: 15px;
+        color: gray;
+    }
+
+    .sbutton {
+        background-color: deepskyblue;
+        margin-left: -5px;
+        border: none;
+        height: 36px;
+        width: 30%;
+    }
+
+    .Subscribe {
+        width: 60%;
+        height: 30px;
+    }
+    .far{
+        color: deeppink;
+    }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <div id="header">
+            <i class="fas fa-phone-alt"> 080-3456665</i>
+        </div>
+        <div id="header-right">
+            <i class="fas fa-map-marker-alt"> select your area</i>
+            <select name="location" id="area">
+                <option value="Whitefield">Whitefield</option>
+                <option value="HSR Layout">HSR Layout</option>
+                <option value="Electronic city">Electronic city</option>
+                <option value="Madiwala">Madiwala</option>
+            </select>
+            <i class="fas fa-user">Singin In</i>
+            <i class="fas fa-heart"> Wishlist</i>
+        </div>
+    </div>
+    <hr color="gold">
+    <div class="nav">
+        <div class="navbar">
+            <img src="./images/LAGU.png" width="150px" height="41px" alt="Lagu logo">
+            <select name="Apparal" id="Apparal">
+                <option value="clothes">Apparal</option>
+                <option value="garments">garments</option>
+                <option value="dress">dress</option>
+                <option value="wear">wear</option>
+            </select>
+            <p>Jewellary</p>
+            <p>Home Decor</p>
+        </div>
+        <div class="search-container">
+            <form action="/action_page.php">
+                <input type="text" class="search" placeholder="Store name,Store id,Material name,etc...." width="80%"
+                    name="search">
+                <button class="search-button" type="submit">search</button>
+            </form>
+
+        </div>
+    </div>
+    <div class="article">
+        <div class="index">
+            <p>Home</p>
+            <p>/Store Register</p>
+        </div>
+        <div>
+            <h2><b>Stores in Banglore</b></h2>
+        </div>
+        <div class="filter">
+            <div>
+                <div id="filter">
+                    <p>FILTERS</p>
+                </div>
+                <div class=" filters">
+                    <p>FEATURES</p>
+                    <hr>
+                    <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+                    <label for="vehicle2"> Popularity</label><br>
+                    <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+                    <label for="vehicle3"> Promotion store</label><br>
+                    <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+                    <label for="vehicle1"> New Arrival store</label><br>
+                    <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+                    <label for="vehicle2"> Recent review</label><br>
+                    <br>
+                    <p>CATEGORY</p>
+                    <hr>
+                    <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+                    <label for="vehicle2"> All Category</label><br>
+                    <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+                    <label for="vehicle3"> Men</label><br>
+                    <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+                    <label for="vehicle1"> Women</label><br>
+                    <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+                    <label for="vehicle2"> Kids men</label><br>
+                    <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+                    <label for="vehicle2"> Kids women</label><br>
+                    <br>
+                    <p>FEATURES</p>
+                    <hr>
+                    <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+                    <label for="vehicle2"> Madiwala</label><br>
+                    <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+                    <label for="vehicle3"> Shivaji Nagar</label><br>
+                    <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+                    <label for="vehicle1"> BTM</label><br>
+                    <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+                    <label for="vehicle2"> MG Road</label><br>
+                    <br>
+                </div>
+            </div>
+            <div>
+                <div class="stores">
+                    <div>
+                        <p><b>Ramesh Trader</b></p>
+                        <b><i class="far fa-smile"></i>
+                            <i class="far fa-smile"></i>
+                            <i class="far fa-smile"></i>
+                            <i class="far fa-smile"></i></b>
+                        <i class="far fa-smile"></i>
+                        <p>#45, 1st floor, MG Road, Banglore.</p>
+                        <p>Last update: two days ago</p>
+                        <p>Promotion available:<b>YES</b></p>
+                        <p>Upcoming arrival:<b>NO</b></p>
+                        <p>Today shop available:<b>YES</b></p>
+                        <hr>
+                    </div>
+                    <div><button class="review" type="submit">200+ User review</button></div>
+                    
+                </div>
+                <div class="stores">
+                    <div>
+                        <p><b>Ramesh Trader</b></p>
+                        <i class="far fa-smile"></i>
+                            <i class="far fa-smile"></i>
+                            <i class="far fa-smile"></i>
+                            <i class="far fa-smile"></i>
+                        <i class="far fa-smile"></i>
+                        <p>#45, 1st floor, MG Road, Banglore.</p>
+                        <p>Last update: two days ago</p>
+                        <p>Promotion available:<b>YES</b></p>
+                        <p>Upcoming arrival:<b>NO</b></p>
+                        <p>Today shop available:<b>YES</b></p>
+                        <hr>
+                    </div>
+                    <div><button class="review" type="submit">200+ User review</button></div>
+                    
+                </div>
+                <div class="stores">
+                    <div>
+                        <p><b>Ramesh Trader</b></p>
+                        <b><i class="far fa-smile"></i>
+                            <i class="far fa-smile"></i>
+                            <i class="far fa-smile"></i>
+                            <i class="far fa-smile"></i></b>
+                        <i class="far fa-smile"></i>
+                        <p>#45, 1st floor, MG Road, Banglore.</p>
+                        <p>Last update: two days ago</p>
+                        <p>Promotion available:<b>YES</b></p>
+                        <p>Upcoming arrival:<b>NO</b></p>
+                        <p>Today shop available:<b>YES</b></p>
+                        <hr>
+                    </div>
+                    <div><button class="review" type="submit">200+ User review</button></div>
+                   
+                </div>
+            </div>
+            <div class="related">
+                <p>Related stores/Recent stores</p>
+            </div>
+        </div>
+        <div class="pages">
+            <button class="page" type="submit"><i class="fas fa-backward"></i></button>
+            <button class="page" type="submit">1</button>
+            <button class="page" type="submit">2</button>
+            <button class="page" type="submit">3</button>
+            <button class="page" type="submit">4</button>
+            <button class="page" type="submit">5</button>
+            <button class="page" type="submit"><i class="fas fa-forward"></i></button>
+        </div>
+    </div>
+    <div id="footer">
+        <div class="help">
+            <img src="./images/LAGU.png" width="150px" height="41px" alt="Lagu logo">
+            <p><b>Need Help?</b></p>
+            <i class="fas fa-phone-alt"> 080-3456665</i>
+            <br>
+            <br>
+            <i class="far fa-envelope">colagu@gmail.com</i>
+            <p><b>Social Share</b></p>
+            <div>
+                <i id="icon" class="fab fa-facebook-f"></i>
+                <i id="icon" class="fab fa-twitter"></i>
+                <i id="icon" class="fab fa-google-plus-g"></i>
+                <i id="icon" class="fab fa-linkedin-in"></i>
+                <i id="icon" class="fab fa-pinterest-p"></i>
+            </div>
+        </div>
+        <div>
+            <p><b>About</b></p>
+            <p>About Us</p>
+            <p>Frequently asked questions</p>
+            <p>Contacts</p>
+            <p>Login</p>
+            <p>Register</p>
+            <p>Term and Conditions</p>
+        </div>
+        <div>
+            <p><b>Discover</b></p>
+            <p>Add business to OOLAGU</p>
+            <p>Business Support</p>
+            <p>Advertise on OOLAGU</p>
+            <p>Blog</p>
+            <p>Careers</p>
+        </div>
+        <div class="news">
+            <p><b>News Letter</b></p>
+            <p>Join our newsletter to keep be informed about<br> offers and news</p>
+            <div class="Subscribe-container">
+                <form action="/action_page.php">
+                    <input type="text" class="Subscribe" placeholder="Enter your email...." width="80%" name="email">
+                    <button class="sbutton" type="submit">Subscribe</button>
+                </form>
+
+            </div>
+        </div>
+    </div>
+    
+
+</body>
+
+</html>

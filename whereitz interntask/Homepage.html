@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.0.7/css/all.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <title>Document</title>
+</head>
+<style>
+    .header {
+        display: flex;
+
+    }
+
+    #header {
+        padding-left: 55px;
+        display: flex;
+        flex: 20%;
+    }
+
+    #header-right {
+        padding-right: 20px;
+    }
+
+    select {
+        border: none;
+    }
+
+    select:hover {
+        background-color: aqua;
+    }
+
+    #area {
+        height: 25px;
+        padding: 3px;
+    }
+
+    hr {
+        color: ;
+    }
+
+    .nav {
+        display: flex;
+
+        box-shadow: 0 8px 6px -6px black;
+    }
+
+    .navbar {
+        display: flex;
+        justify-content: space-around;
+        flex: 85%;
+        height: 41px;
+    }
+
+    .search-container {
+        margin-bottom: 5px;
+        flex: 50%;
+    }
+
+    .search-button {
+        background-color: deepskyblue;
+        border: none;
+        margin-left: -5px;
+        height: 42px;
+        width: 17%;
+    }
+
+    .search {
+
+        height: 35px;
+        width: 80%;
+    }
+
+    .tab {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .tablinks {
+        border: none;
+        background: deepskyblue;
+    }
+
+    .tablinks:hover {
+        color: gray;
+    }
+
+    .index {
+        display: flex;
+    }
+
+    #tabs {
+        width: 75%;
+    }
+
+    .input {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+    }
+
+    .article {
+        margin-left: 75px;
+    }
+
+    /* input[type=submit] {
+  width: 100%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+} */
+
+    #saddress {
+        height: 145px;
+    }
+
+    .pbutton {
+        background-color: dimgray;
+        height: 32px;
+        width: 65px;
+        margin-right: 10px;
+    }
+
+    .nbutton {
+        background-color: deepskyblue;
+        height: 32px;
+        width: 65px;
+        margin-right: 10px;
+    }
+
+    .fbutton {
+        background-color: red;
+        height: 32px;
+        width: 65px;
+        margin-right: 10px;
+    }
+
+    #button {
+        display: flex;
+        float: right;
+    }
+
+    #footer {
+        margin-top: 45px;
+        display: flex;
+        justify-content: space-between;
+        background-color: black;
+        color: white;
+    }
+
+    .help {
+        padding-left: 45px;
+    }
+
+    .news {
+        padding-right: 50px;
+    }
+
+    #icon {
+        padding-right: 15px;
+        color: gray;
+    }
+
+    .sbutton {
+        background-color: deepskyblue;
+        margin-left: -5px;
+        border: none;
+        height: 36px;
+        width: 30%;
+    }
+
+    .Subscribe {
+        width: 60%;
+        height: 30px;
+    }
+
+
+
+    .category {
+        display: flex;
+    }
+
+    #Apparal {
+        margin-top: 12px;
+        height: 25px;
+        width: 10%;
+    }
+
+    .grid-container {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        padding: 10px;
+    }
+
+    .grid-item {
+        padding: 5px;
+    }
+
+    .selected {
+        padding-left: 25px;
+    }
+
+    b {
+        font-size: 17px;
+    }
+    .verify-store{
+        width: 75%;
+    }
+    
+</style>
+
+<body>
+    <div class="header">
+        <div id="header">
+            <i class="fas fa-phone-alt"> 080-3456665</i>
+        </div>
+        <div id="header-right">
+            <i class="fas fa-map-marker-alt"> select your area</i>
+            <select name="location" id="area">
+                <option value="Whitefield">Whitefield</option>
+                <option value="HSR Layout">HSR Layout</option>
+                <option value="Electronic city">Electronic city</option>
+                <option value="Madiwala">Madiwala</option>
+            </select>
+            <i class="fas fa-user">Singin In</i>
+            <i class="fas fa-heart"> Wishlist</i>
+        </div>
+    </div>
+    <hr color="gold">
+    <div class="nav">
+        <div class="navbar">
+            <img src="./images/LAGU.png" width="150px" height="41px" alt="Lagu logo">
+            <select name="Apparal" id="Apparal">
+                <option value="clothes">Apparal</option>
+                <option value="garments">garments</option>
+                <option value="dress">dress</option>
+                <option value="wear">wear</option>
+            </select>
+            <p>Jewellary</p>
+            <p>Home Decor</p>
+        </div>
+        <div class="search-container">
+            <form action="/action_page.php">
+                <input type="text" class="search" placeholder="Store name,Store id,Material name,etc...." width="80%"
+                    name="search">
+                <button class="search-button" type="submit">search</button>
+            </form>
+
+        </div>
+    </div>
+    <div class="article">
+        <div class="index">
+            <p>Home</p>
+            <p>/Store Register</p>
+        </div>
+        <div id="tabs">
+            <div class="tab">
+                <button class="tablinks" onclick="register(event, 'Store-Register')" id="defaultOpen">Store Register</button>
+                <button class="tablinks" onclick="register(event, 'Select-Category')">Select Category</button>
+                <button class="tablinks" onclick="register(event, 'verify')">Verify Store Detail</button>
+            </div>
+            <div id="Store-Register" class="tabcontent">
+
+                <div>
+                    <form action="/action_page.php">
+                        <label for="sname"><b>Store Name</b></label>
+                        <input type="text" class="input" id="sname" name="Store Name" placeholder="store name..">
+                        <label for="slocation"><b>Store Location</b></label>
+                        <input type="text" class="input" id="slocation" name="Store Location"
+                            placeholder="Store Location..">
+                        <label for="scontact"><b>Store Contact Number</b></label>
+                        <input type="tel" class="input" id="fname" name="Store Contact Number"
+                            placeholder="Store Contact Number..">
+                        <label for="alternative contact"><b>Store Alternative Number</b></label>
+                        <input type="tel" class="input" id="alternative contact" name="Store Alternative Number"
+                            placeholder="Store Alternative Number..">
+                        <label for="saddress"><b>Store Address</b></label>
+                        <input type="text" class="input" id="saddress" name="Store Address"
+                            placeholder="Store Address..">
+                        <label for="pincode"><b>Pincode</b></label>
+                        <input type="number" class="input" id="pincode" name="Pincode" placeholder="Pincode..">
+                </div>
+                <!-- <div id="button">
+                    <button class="pbutton" type="submit">Previous</button>
+                    <button class="nbutton" type="submit">Next</button>
+                    <button class="fbutton" type="submit">Finish</button>
+                </div> -->
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <div class="article">
+    <div id="Select-Category" class="tabcontent">
+        <div class="category">
+            <p>Select Category Type:</p>
+            <select name="Apparal" id="Apparal">
+                <option value="clothes">Apparal</option>
+                <option value="garments">garments</option>
+                <option value="dress">dress</option>
+                <option value="wear">wear</option>
+            </select>
+        </div>
+
+
+        <div class="grid-container">
+            <div>
+                <div class="grid-item">
+                    <input type="checkbox" id="mens" name="vehicle1" value="Bike">
+                    <label for="vehicle1"><b>Mens</b></label><br>
+                </div>
+                <div class="selected">
+                    <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+                    <label for="vehicle2"> Mens Formal</label><br>
+                    <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+                    <label for="vehicle3"> Mens Casual</label><br>
+                    <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+                    <label for="vehicle1"> Womens Formal</label><br>
+                    <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+                    <label for="vehicle2"> Kids</label><br>
+                </div>
+            </div>
+            <div>
+                <div class="grid-item">
+                    <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+                    <label for="vehicle1"><b>Womens</b></label><br>
+                </div>
+                <div class="selected">
+                    <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+                    <label for="vehicle2"> Womens Formal</label><br>
+                    <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+                    <label for="vehicle3"> Womens Casual</label><br>
+                    <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+                    <label for="vehicle1"> Womens Formal</label><br>
+                    <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+                    <label for="vehicle2"> Kids</label><br>
+                </div>
+            </div>
+            <div>
+                <div class="grid-item">
+                    <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+                    <label for="vehicle1"><b>Mens Kids</b></label><br>
+                </div>
+                <div class="selected">
+                    <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+                    <label for="vehicle2"> Mens Kids Formal</label><br>
+                    <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+                    <label for="vehicle3"> Mens Kids Casual</label><br>
+                    <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+                    <label for="vehicle1"> Womens Kids Formal</label><br>
+                    <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+                    <label for="vehicle2"> Kids</label><br>
+                </div>
+            </div>
+            <div>
+                <div class="grid-item">
+                    <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+                    <label for="vehicle1"><b>Mens</b></label><br>
+                </div>
+                <div class="selected">
+                    <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+                    <label for="vehicle2"> Mens Formal</label><br>
+                    <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+                    <label for="vehicle3"> Mens Casual</label><br>
+                    <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+                    <label for="vehicle1"> Womens Formal</label><br>
+                    <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+                    <label for="vehicle2"> Kids</label><br>
+                </div>
+            </div>
+            <div>
+                <div class="grid-item">
+                    <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+                    <label for="vehicle1"><b>Mens</b></label><br>
+                </div>
+                <div class="selected">
+                    <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+                    <label for="vehicle2"> Mens Formal</label><br>
+                    <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+                    <label for="vehicle3"> Mens Casual</label><br>
+                    <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+                    <label for="vehicle1"> Womens Formal</label><br>
+                    <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+                    <label for="vehicle2"> Kids</label><br>
+                </div>
+            </div>
+            <div>
+                <div class="grid-item">
+                    <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+                    <label for="vehicle1"><b>Mens</b></label><br>
+                </div>
+                <div class="selected">
+                    <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+                    <label for="vehicle2"> Mens Formal</label><br>
+                    <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+                    <label for="vehicle3"> Mens Casual</label><br>
+                    <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+                    <label for="vehicle1"> Womens Formal</label><br>
+                    <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+                    <label for="vehicle2"> Kids</label><br>
+                </div>
+            </div>
+            <div>
+                <div class="grid-item">
+                    <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+                    <label for="vehicle1"><b>Mens</b></label><br>
+                </div>
+                <div class="selected">
+                    <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+                    <label for="vehicle2"> Mens Formal</label><br>
+                    <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+                    <label for="vehicle3"> Mens Casual</label><br>
+                    <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+                    <label for="vehicle1"> Womens Formal</label><br>
+                    <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+                    <label for="vehicle2"> Kids</label><br>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+    <div class="article">
+    <div id="verify" class="tabcontent">
+        <div class="verify-store">
+            <p><b>Store Registered Details</b></p>
+            <hr>
+            <p><b>Store Name &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp</b>RMK Traders</p>
+            <p><b>Store Location &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp </b>BTM Layout</p>
+            <p><b>Store Contact Number &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp </b>+91-435435435</p>
+            <p><b>Store Alternative Number &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp </b>-</p>
+            <p><b>Store Address &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp </b>#45,BTM Layout,2nd Phase</p>
+            <p>Banglore</p>
+            <p><b>Pin Code &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp </b>560019</p>
+            <p><b>Selected Category Details</b></p>
+            <hr>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <p><b>Selected Category Details</b></p>
+            <hr>
+            <p>Select Category Type:<b>Apparel</b></p>
+            <div>
+                <div class="grid-container">
+                    <div>
+                        <div class="grid-item">
+                            <label for="vehicle1"><b>Mens</b></label><br>
+                        </div>
+                        <div class="listed">
+                            <label for="vehicle2"> Mens Formal</label><br>
+                            <label for="vehicle3"> Mens Casual</label><br>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="grid-item">
+                            <label for="vehicle1"><b>Womens</b></label><br>
+                        </div>
+                        <div class="listed">
+                            <label for="vehicle2"> Womens Formal</label><br>
+                            <label for="vehicle3"> Womens Casual</label><br>
+                            <label for="vehicle1"> Womens Formal</label><br>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="grid-item">
+                            <label for="vehicle1"><b>Mens Kids</b></label><br>
+                        </div>
+                        <div class="listed">
+                            <label for="vehicle2"> Mens Kids Formal</label><br>
+                            <label for="vehicle3"> Mens Kids Casual</label><br>
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+    <!-- <div id="Store-Register" class="tabcontent">
+        <h3>London</h3>
+        <p>London is the capital city of England.</p>
+      </div>
+ -->
+
+
+    <script>
+        function register(evt, cityName) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+            document.getElementById(cityName).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
+        document.getElementById("defaultOpen").click();
+    </script>
+
+
+<div class="article">
+<div id="button">
+    <button class="pbutton" type="submit">Previous</button>
+    <button class="nbutton" type="submit">Next</button>
+    <button class="fbutton" type="submit">Finish</button>
+</div>
+</div>
+
+
+    <div id="footer">
+        <div class="help">
+            <img src="./images/LAGU.png" width="150px"  height="41px" style="padding-top: 12px;" alt="Lagu logo">
+            <p><b>Need Help?</b></p>
+            <i class="fas fa-phone-alt"> 080-3456665</i>
+            <br>
+            <br>
+            <i class="far fa-envelope">colagu@gmail.com</i>
+            <p><b>Social Share</b></p>
+            <div>
+                <i id="icon" class="fab fa-facebook-f"></i>
+                <i id="icon" class="fab fa-twitter"></i>
+                <i id="icon" class="fab fa-google-plus-g"></i>
+                <i id="icon" class="fab fa-linkedin-in"></i>
+                <i id="icon" class="fab fa-pinterest-p"></i>
+            </div>
+        </div>
+        <div>
+            <p><b>About</b></p>
+            <p>About Us</p>
+            <p>Frequently asked questions</p>
+            <p>Contacts</p>
+            <p>Login</p>
+            <p>Register</p>
+            <p>Term and Conditions</p>
+        </div>
+        <div>
+            <p><b>Discover</b></p>
+            <p>Add business to OOLAGU</p>
+            <p>Business Support</p>
+            <p>Advertise on OOLAGU</p>
+            <p>Blog</p>
+            <p>Careers</p>
+        </div>
+        <div class="news">
+            <p><b>News Letter</b></p>
+            <p>Join our newsletter to keep be informed about<br> offers and news</p>
+            <div class="Subscribe-container">
+                <form action="/action_page.php">
+                    <input type="text" class="Subscribe" placeholder="Enter your email...." width="80%" name="email">
+                    <button class="sbutton" type="submit">Subscribe</button>
+                </form>
+
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
